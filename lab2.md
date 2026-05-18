@@ -1,14 +1,14 @@
-# Лабораторна робота №2
+
 **Проєкт:** Roamio — International Trip Planner
 
-## Крок 1-2. Функціональні вимоги
+
 * FR-01: Управління профілем.
 * FR-02: Створення подорожі.
 * FR-03: Додавання локації.
 * FR-04: Запрошення друзів.
 * FR-05: Розрахунок бюджету.
 
-## Крок 3. Діаграма прецедентів (Use Case)
+
 ```mermaid
 flowchart LR
     User([Мандрівник])
@@ -29,7 +29,7 @@ flowchart LR
     U2 --- DB
 ```
 
-## Крок 4. Діаграма класів (Class Diagram)
+
 ```mermaid
 classDiagram
     class User {
@@ -59,7 +59,7 @@ classDiagram
     Trip "1" *-- "*" Item : композиція
 ```
 
-## Крок 5. Діаграма послідовності (Sequence Diagram)
+
 ```mermaid
 sequenceDiagram
     actor U as Мандрівник
@@ -77,7 +77,7 @@ sequenceDiagram
     end
 ```
 
-## Крок 6. Матриця трасовності
+
 | Вимога | Use Case | Класи | Діаграма послідовності |
 | :--- | :--- | :--- | :--- |
 | FR-01 | Профіль | User | Ні |
