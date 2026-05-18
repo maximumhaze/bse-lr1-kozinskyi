@@ -2,9 +2,12 @@
 Короткий опис проєкту (1-2 речення).
 
 ## Автор
-- **Козінський Ілля**, група ПЗПІз-25-1
-- Email: illia.kozinskyi@nure.ua
+**Козінський Ілля**, група ПЗПІз-25-1
+Email: illia.kozinskyi@nure.ua
 
 ## Технології
-- Мова програмування: Python
-- IDE: Visual Studio Code
+Мова програмування: Python
+IDE: Visual Studio Code
+
+## Хід роботи
+Виконано базові налаштування Git та GitHub.
