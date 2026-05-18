@@ -27,8 +27,11 @@ flowchart LR
 
     User --- U1 & U2 & U3
     U2 --- DB
+```
 
-    classDiagram
+## Крок 4. Діаграма класів (Class Diagram)
+```mermaid
+classDiagram
     class User {
         +String name
         +login()
@@ -54,8 +57,11 @@ flowchart LR
     Trip "1" *-- "*" Location : композиція
     Trip "1" *-- "1" Budget : композиція
     Trip "1" *-- "*" Item : композиція
+```
 
-    sequenceDiagram
+## Крок 5. Діаграма послідовності (Sequence Diagram)
+```mermaid
+sequenceDiagram
     actor U as Мандрівник
     participant UI as Додаток
     participant S as Сервер
@@ -69,3 +75,13 @@ flowchart LR
     else Помилка
         S-->>UI: Помилка формату
     end
+```
+
+## Крок 6. Матриця трасовності
+| Вимога | Use Case | Класи | Діаграма послідовності |
+| :--- | :--- | :--- | :--- |
+| FR-01 | Профіль | User | Ні |
+| FR-02 | Подорож | Trip, User | Ні |
+| FR-03 | Локація | Trip, Location | Ні |
+| FR-04 | Друзі | Trip, User | Ні |
+| FR-05 | Бюджет | Trip, Budget | Так |
