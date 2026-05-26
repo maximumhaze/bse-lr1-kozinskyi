@@ -1,83 +1,23 @@
-
+# Лабораторна робота №2
 **Проєкт:** Roamio — International Trip Planner
 
-
+## Крок 1-2. Функціональні вимоги
 * FR-01: Управління профілем.
 * FR-02: Створення подорожі.
 * FR-03: Додавання локації.
 * FR-04: Запрошення друзів.
 * FR-05: Розрахунок бюджету.
 
+## Крок 3. Діаграма прецедентів (Use Case)
+![Use Case](./diagrams/usecase.png)
 
-```mermaid
-flowchart LR
-    User([Мандрівник])
-    DB([База даних])
+## Крок 4. Діаграма класів (Class Diagram)
+![Class Diagram](./diagrams/classdiagram.png)
 
-    subgraph Roamio
-        U1(FR-01: Профіль)
-        U2(FR-02: Подорож)
-        U3(FR-03: Локація)
-        U4(FR-04: Друзі)
-        U5(FR-05: Бюджет)
-        
-        U2 -. include .-> U5
-        U2 -. extend .-> U4
-    end
+## Крок 5. Діаграма послідовності (Sequence Diagram)
+![Sequence](./diagrams/sequence.png)
 
-    User --- U1 & U2 & U3
-    U2 --- DB
-```
-
-
-```mermaid
-classDiagram
-    class User {
-        +String name
-        +login()
-    }
-    class Trip {
-        +String destination
-        +create()
-    }
-    class Location {
-        +String address
-        +add()
-    }
-    class Budget {
-        +float amount
-        +calculate()
-    }
-    class Item {
-        +String name
-        +pack()
-    }
-
-    User "1" -- "*" Trip : створює
-    Trip "1" *-- "*" Location : композиція
-    Trip "1" *-- "1" Budget : композиція
-    Trip "1" *-- "*" Item : композиція
-```
-
-
-```mermaid
-sequenceDiagram
-    actor U as Мандрівник
-    participant UI as Додаток
-    participant S as Сервер
-    
-    U->>UI: Ввести витрати
-    UI->>S: calculate_budget()
-    
-    alt Дані вірні
-        S-->>UI: Сума (1050)
-        UI-->>U: Показати на екрані
-    else Помилка
-        S-->>UI: Помилка формату
-    end
-```
-
-
+## Крок 6. Матриця трасовності
 | Вимога | Use Case | Класи | Діаграма послідовності |
 | :--- | :--- | :--- | :--- |
 | FR-01 | Профіль | User | Ні |
