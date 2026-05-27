@@ -1,48 +1,60 @@
 <mxfile host="65bd71144e">
     <diagram id="NQ5CGi-daLIdq734c9Vv" name="Page-1">
-        <mxGraphModel dx="1190" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1190" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Roamio" style="swimlane;startSize=30;dashed=1;dashPattern=8 8;strokeWidth=2;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="40" width="320" height="500" as="geometry"/>
+                <mxCell id="20" value="Roamio" style="swimlane;startSize=30;dashed=1;dashPattern=8 8;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="40" width="320" height="540" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="FR-01: Ïðîô³ëü" style="ellipse;whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                <mxCell id="21" value="FR-01: Ïðîô³ëü" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="20">
                     <mxGeometry x="85" y="50" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="FR-02: Ïîäîðîæ" style="ellipse;whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                <mxCell id="22" value="FR-02: Ïîäîðîæ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="20">
                     <mxGeometry x="85" y="150" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="FR-03: Ëîêàö³ÿ" style="ellipse;whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                <mxCell id="23" value="FR-03: Ëîêàö³ÿ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="20">
                     <mxGeometry x="85" y="250" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="FR-04: Äðóç³" style="ellipse;whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                <mxCell id="24" value="FR-04: Äðóç³" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="20">
                     <mxGeometry x="85" y="350" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="FR-05: Áþäæåò" style="ellipse;whiteSpace=wrap;html=1;" parent="2" vertex="1">
-                    <mxGeometry x="85" y="420" width="150" height="60" as="geometry"/>
+                <mxCell id="25" value="FR-05: Áþäæåò" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+                    <mxGeometry x="85" y="450" width="150" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="«include»" style="dashed=1;endArrow=open;endFill=0;html=1;" parent="2" source="4" target="7" edge="1">
-                    <mxGeometry x="0.0014" relative="1" as="geometry">
+                <mxCell id="35" value="«include»" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="20" source="22" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="«extend»" style="dashed=1;endArrow=open;endFill=0;html=1;" edge="1" parent="20" source="22" target="24">
+                    <mxGeometry x="-0.7143" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="8" value="Ìàíäð³âíèê" style="shape=mxgraph.flowchart.actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="60" y="200" width="60" height="80" as="geometry"/>
+                <mxCell id="26" value="Ìàíäð³âíèê" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="180" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="Áàçà äàíèõ" style="shape=mxgraph.flowchart.actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="580" y="200" width="60" height="80" as="geometry"/>
+                <mxCell id="27" value="Àäì³í³ñòðàòîð" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="380" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" parent="1" source="8" target="3" edge="1">
+                <mxCell id="28" value="Áàçà äàíèõ" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="180" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" edge="1" parent="1" source="26" target="21">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" parent="1" source="8" target="4" edge="1">
+                <mxCell id="30" edge="1" parent="1" source="26" target="22">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" parent="1" source="8" target="5" edge="1">
+                <mxCell id="31" edge="1" parent="1" source="26" target="23">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" parent="1" source="4" target="9" edge="1">
+                <mxCell id="32" edge="1" parent="1" source="27" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" edge="1" parent="1" source="27" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" edge="1" parent="1" source="22" target="28">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
