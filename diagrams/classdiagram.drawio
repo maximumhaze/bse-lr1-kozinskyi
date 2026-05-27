@@ -1,50 +1,62 @@
 <mxfile host="65bd71144e">
     <diagram id="tymsE1p4_0EbUBOg1j6k" name="Page-1">
-        <mxGraphModel dx="1190" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1190" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="User" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="40" width="160" height="90" as="geometry"/>
+                <mxCell id="10" value="User" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="180" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="+name: String&#xa;+login()" style="text;align=left;spacingLeft=8;html=1;" parent="2" vertex="1">
-                    <mxGeometry y="30" width="160" height="60" as="geometry"/>
+                <mxCell id="11" value="-name: String&#xa;-email: String&#xa;+login(): void" style="text;align=left;spacingLeft=8;html=1;" parent="10" vertex="1">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Trip" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="260" y="40" width="160" height="90" as="geometry"/>
+                <mxCell id="12" value="Trip" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="40" width="180" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="+destination: String&#xa;+create()" style="text;align=left;spacingLeft=8;html=1;" parent="4" vertex="1">
-                    <mxGeometry y="30" width="160" height="60" as="geometry"/>
+                <mxCell id="13" value="-destination: String&#xa;-date: Date&#xa;+create(): void" style="text;align=left;spacingLeft=8;html=1;" parent="12" vertex="1">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Location" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="260" width="160" height="90" as="geometry"/>
+                <mxCell id="14" value="Location" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="280" width="180" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="+address: String&#xa;+add()" style="text;align=left;spacingLeft=8;html=1;" parent="6" vertex="1">
-                    <mxGeometry y="30" width="160" height="60" as="geometry"/>
+                <mxCell id="15" value="-address: String&#xa;-city: String&#xa;+add(): void" style="text;align=left;spacingLeft=8;html=1;" parent="14" vertex="1">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Budget" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="260" y="260" width="160" height="90" as="geometry"/>
+                <mxCell id="16" value="Budget" style="swimlane;startSize=30;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="280" width="180" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="+amount: float&#xa;+calculate()" style="text;align=left;spacingLeft=8;html=1;" parent="8" vertex="1">
-                    <mxGeometry y="30" width="160" height="60" as="geometry"/>
+                <mxCell id="17" value="-amount: float&#xa;-currency: String&#xa;+calculate(): float" style="text;align=left;spacingLeft=8;html=1;" vertex="1" parent="16">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Item" style="swimlane;startSize=30;fontStyle=1;" parent="1" vertex="1">
-                    <mxGeometry x="480" y="260" width="160" height="90" as="geometry"/>
+                <mxCell id="18" value="Item" style="swimlane;startSize=30;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="280" width="180" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="+name: String&#xa;+pack()" style="text;align=left;spacingLeft=8;html=1;" parent="10" vertex="1">
-                    <mxGeometry y="30" width="160" height="60" as="geometry"/>
+                <mxCell id="19" value="-name: String&#xa;-packed: boolean&#xa;+pack(): void" style="text;align=left;spacingLeft=8;html=1;" vertex="1" parent="18">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="створює" style="endArrow=open;endFill=0;" parent="1" source="2" target="4" edge="1">
+                <mxCell id="20" value="PremiumUser" style="swimlane;startSize=30;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="520" width="180" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="-subscription: String&#xa;+getDiscount(): float" style="text;align=left;spacingLeft=8;html=1;" vertex="1" parent="20">
+                    <mxGeometry y="30" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="створює" style="endArrow=open;endFill=0;html=1;" edge="1" parent="1" source="10" target="12">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="1..*" style="endArrow=diamondThin;endFill=1;startArrow=none;" parent="1" source="4" target="6" edge="1">
+                <mxCell id="23" value="1..*" style="endArrow=diamondThin;endFill=1;html=1;" edge="1" parent="1" source="12" target="14">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="1..1" style="endArrow=diamondThin;endFill=1;startArrow=none;" parent="1" source="4" target="8" edge="1">
+                <mxCell id="24" value="1..1" style="endArrow=diamondThin;endFill=1;html=1;" edge="1" parent="1" source="12" target="16">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="1..*" style="endArrow=diamondThin;endFill=1;startArrow=none;" parent="1" source="4" target="10" edge="1">
+                <mxCell id="25" value="1..*" style="endArrow=diamondThin;endFill=1;html=1;" edge="1" parent="1" source="12" target="18">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="endArrow=block;endFill=0;html=1;" edge="1" parent="1" source="20" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Trip" style="swimlane;startSize=30;fontStyle=1;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="40" width="180" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
